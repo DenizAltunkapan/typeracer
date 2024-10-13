@@ -1,5 +1,5 @@
 const text = document.querySelector('.text');
-const input = document.querySelector('input');
+const input = document.querySelector('textarea');
 const countdown = document.querySelector('.countdown');
 const message = document.querySelector('.message');
 
@@ -43,9 +43,9 @@ function generateText() {
 
 //check if user input matches
 function checkText(){
-    const inputText = input.value;
+    const inputText = input.value.trim();
     const displayedText = text.textContent;
-    if(inputText== displayedText){
+    if(inputText.replace(/\n/g, ' ') == displayedText){
         const endTime = Date.now();
         const trackedTime= (endTime-startTime)/1000;
         countdown.textContent = `Time: ${trackedTime.toFixed(2)} seconds`;
