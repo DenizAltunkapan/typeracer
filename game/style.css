@@ -5,12 +5,14 @@ body, html{
     align-items: center;
     transform: scale(1.2);
     overflow: hidden;
+    background-color: rgb(211, 211, 211);
 }
 
 .container {
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 500px;
     margin: 0 auto;
@@ -21,12 +23,15 @@ h3{
 }
 
 .text{
-    border: 1px solid #ccc; /* Optional: Rahmen für den Textbereich */
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-weight: 540;
+    border-color: black;
 }
 
 textarea{
     width: 500px;
     height: 50px;
+    border-radius: 5px;
+    background-color: rgb(205, 205, 205);
 }
