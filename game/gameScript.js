@@ -48,13 +48,8 @@ function checkText(){
     if(inputText.replace(/\n/g, ' ') == displayedText){
         const endTime = Date.now();
         const trackedTime= (endTime-startTime)/1000;
-        //countdown.textContent = `Time: ${trackedTime.toFixed(2)} seconds`;
-        //message.textContent = `next round will start in ${roundBreak/1000} seconds.`;
-        //message.style.display = 'block';
         localStorage.setItem('trackedTime', trackedTime);
-    
-        // Navigiere zur Endscreen-Seite
-        window.location.href = 'endScreen/endScreen.html';
+        window.location.href = 'resultScreen/resultScreen.html';
     }
 }
 
