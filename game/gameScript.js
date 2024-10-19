@@ -48,6 +48,8 @@ function checkText(){
     if(inputText.replace(/\n/g, ' ') == displayedText){
         const endTime = Date.now();
         const trackedTime= (endTime-startTime)/1000;
+        const wordCount = displayedText.split(' ').length;
+        localStorage.setItem('wordCount', wordCount);
         localStorage.setItem('trackedTime', trackedTime);
         window.location.href = 'resultScreen/resultScreen.html';
     }
